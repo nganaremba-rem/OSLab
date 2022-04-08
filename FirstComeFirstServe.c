@@ -162,9 +162,8 @@ void drawGanttChart(int *ganttPID, int *ganttAT, int *ganttCompletion, int noOfP
 			if(ganttAT[i] != 0){ // if the first element doesn't starts from 0
 				// code for null
 				printf("      ");
-			}else{ // if it starts from 0
-				printf("%d    %d",ganttAT[i], ganttCompletion[i]);
 			}
+			printf("%d    %d",ganttAT[i], ganttCompletion[i]);
 		}else{ // for the remaining elements
 			if(ganttCompletion[i-1] == ganttAT[i]){ // if last completion time == new process arrival time
 				printf("     %d", ganttCompletion[i]); 
